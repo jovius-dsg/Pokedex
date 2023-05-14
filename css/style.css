@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rajdhani', cursive;
+}
+
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 2%;
+    position: relative;
+}
+
+.pokedex {
+    width: 100%;
+    max-width: 800px;
+}
+
+.pokemon__image{
+    position: absolute;
+    bottom: 44%;
+    left: 18%;
+    transform: translate(2%, 2%);
+    height: 20%;
+}
+
+.pokemon__data{
+    position: absolute;
+    color: #3a444d;
+    top: 78.5%;
+    left: 10.2%;
+    font-size: clamp(8px, 5vw, 20px);
+
+}
+
+.pokemon__name{
+    color: #292f35;
+    text-transform: capitalize;
+}
+
+.form{
+    position: absolute;
+    width: 32%;
+    top: 74%;
+    left: 57.5%;
+}
+
+.input_search{
+    width: 100%;
+    padding: 3%;
+    outline: none;
+    background-color: #F2F4E7;
+    border: 2px solid #F2F4E7;
+    border-radius: 5px;
+    font-weight: 600;
+    box-shadow: 1px 6px 0 #510C25, 6px 6px 0 #510C25 ;
+}
+
+.buttons1{
+    position: absolute;
+    top: 75.2%;
+    left: 31.5%;
+    width:  8%;
+    display: flex;
+    gap: 30px;
+}
+
+.buttons-up{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 71%;
+    left: 31.8%;
+    width: 5%;
+    gap: 30px;
+    transform: rotate(180deg);
+}
+
+.buttons-down{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 79.5%;
+    left: 34.3%;
+    width: 5%;
+    gap: 30px;
+}
+
+button{
+    width: 50%;
+    align-items: center;
+}
+
+.img-button-l{
+    width: 60%;
+    transform: rotate(180deg);
+}
+
+.img-button-r{
+    width: 60%;
+}
+
+.img-button-up{
+    width: 50%;
+    transform: rotate(90deg);
+}
+
+.img-button-down{
+    width: 50%;
+    transform: rotate(90deg);
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./favicons/favicon-16x16.png">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./js/script.js"></script>
+    <title>Pokédex</title>
+</head>
+<body>
+    <main>
+        <h1 class="pokemon__data">
+            <span class="pokemon__number"></span> -
+            <span class="pokemon__name"></span>
+        </h1>
+
+        <form class="form">
+          <input 
+              type="search"
+              class="input_search"
+              placeholder="Name or Number"
+              required
+          />
+        </form>
+
+        <div class="buttons1">
+            <button disabled  class="button btn-left"><img class="img-button-l" src="./favicons/arrow.svg" alt="left"></button>
+            <button disabled  class="button btn-right"><img class="img-button-r" src="./favicons/arrow.svg" alt="right"></button>
+        </div>
+
+        <div class="buttons-up">
+            <button class="button btn-up"><img class="img-button-up" src="./favicons/arrow.svg" alt="up"></button>
+        </div>
+
+        <div class="buttons-down">
+            <button class="button btn-down"><img class="img-button-down" src="./favicons/arrow.svg" alt="down"></button>
+        </div>
+
+        <img src="#"
+        alt="pokemon" class="pokemon__image">
+
+        <img src="./images/pokedex-base.png" alt="pokedex" class="pokedex">
+    </main>
+</body>
+</html>
