@@ -25,12 +25,147 @@ main {
     max-width: 800px;
 }
 
+.white-light{
+    position: absolute;
+    width: 20%;
+    top: 3%;
+    left: 2.5%;
+    opacity: 0;
+}
+
+.white-light.active {
+    animation: animated 1s;
+    animation-delay: calc(0.2s * var());
+}
+
+.red-light {
+    position: absolute;
+    width: 4.5%;
+    top: 7.2%;
+    left: 19%;
+    animation: animate-red 1s infinite;
+    animation-delay: calc(0.2s * var());
+}
+
+.yellow-light {
+    position: absolute;
+    width: 4.5%;
+    top: 7.2%;
+    left: 22.5%;
+    animation: animate-yellow 1.2s infinite;
+    animation-delay: calc(0.2s * var());
+}
+
+.green-light {
+    position: absolute;
+    width: 4.5%;
+    top: 7.2%;
+    left: 25.9%;
+    animation: animate-green 1.4s infinite;
+    animation-delay: calc(0.2s * var());
+}
+
+@keyframes animated{
+    0% {
+        -webkit-opacity:0;
+    }
+    50%{
+        -webkit-opacity: 1;
+    }
+    100%  {
+        -webkit-opacity: 0;
+    }
+}
+
+@keyframes animate-red {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes animate-yellow {
+    0% {
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes animate-green {
+    0% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .pokemon__image{
     position: absolute;
     bottom: 44%;
     left: 18%;
     transform: translate(2%, 2%);
     height: 20%;
+}
+.abilities{
+    position: absolute;
+    bottom: 59.8%;
+    left: 69.5%;
+}
+
+.abilities_text{
+    font-weight: 600;
+    color: #F2F4E7;
+    font-size: 60%;
+}
+.abilities0{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 56%;
+    left: 59%;
+    border-radius: 10%;
+    width: 30%;
+}
+
+.pokemon__abilitie_1,
+.pokemon__abilitie_2,
+.pokemon__abilitie_3,
+.pokemon__abilitie_4{
+    font-weight: 300;
+    text-transform: capitalize;
+    color: #F2F4E7;
+}
+
+.types1{
+    position: absolute;
+    bottom: 32.2%;
+    left: 58.5%;
+}
+
+.types2{
+    position: absolute;
+    bottom: 32.2%;
+    left: 69.5%
+}
+
+.pokemon__type_1, .pokemon__type_2{
+    font-weight: 600;
+    text-transform: capitalize;
 }
 
 .pokemon__data{
