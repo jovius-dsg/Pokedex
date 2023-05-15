@@ -40,6 +40,7 @@ const renderPokemon = async (pokemon) => {
     pokemonAbilities3.innerHTML = '-';
 
     if(data) {
+        searchPokemon = data.id;
         pokemonImage.style.display = 'block';
         pokemonImage.src = data['sprites']['versions']['generation-v']['black-white']['animated']['front_default'];
         pokemonName.innerHTML = data.name;
@@ -50,7 +51,6 @@ const renderPokemon = async (pokemon) => {
         pokemonAbilities2.innerHTML = data['abilities']['1']['ability']['name'];
         pokemonAbilities3.innerHTML = data['abilities']['2']['ability']['name'];
         input.value = '';
-        searchPokemon = data.id;
     } else {
         pokemonImage.style.display = 'none';
         pokemonName.innerHTML = 'Not found :C';
